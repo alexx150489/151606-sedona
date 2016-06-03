@@ -13,7 +13,12 @@
   },
   "homepage": "https://github.com/htmlacademy-adaptive/151606-sedona",
   "devDependencies": {
-    "editorconfig-tools": "0.1.1"
+    "editorconfig-tools": "0.1.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-sass": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
   },
   "scripts": {
     "test": "editorconfig-tools check *"
