@@ -1,0 +1,24 @@
+.main-footer {
+  @include container;
+  @include outline(1px, solid, red);
+}
+
+.main-footer__map {
+
+}
+
+.main-footer__hashtag {
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $base-text-color;
+  text-transform: uppercase;
+}
+
+.main-footer__copyright {
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+.video {
+  @include container;
+}
+
+.video__video-title {
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $base-text-color;
+  text-transform: uppercase;
+}
+
+.video__video-text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}
+
+.video__video-player {
+  background: url(../../img/video-mobile@1x.jpg) 0 0 no-repeat;
+}

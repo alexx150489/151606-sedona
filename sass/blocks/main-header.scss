@@ -1,0 +1,16 @@
+.main-header {
+  @include container;
+  @include outline(1px, solid, red);
+}
+
+.main-header__main-logo {
+  display: block;
+  width: 320px;
+  height: 388px;
+  background: url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+}
+
+.main-header__visually-hidden {
+  display: none;
+}
+

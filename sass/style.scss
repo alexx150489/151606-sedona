@@ -1,1 +1,17 @@
-body { background: red; }
+//1
+@import "mixins.scss";
+@import "variables.scss";
+//2
+@import "blocks/advantages.scss";
+@import "blocks/find-hotel.scss";
+@import "blocks/main-content.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/main-form.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/photo.scss";
+@import "blocks/reasons.scss";
+@import "blocks/video.scss";
+//3
+@import "global/fonts.scss";
+
