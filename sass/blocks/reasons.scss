@@ -1,0 +1,27 @@
+.reasons__reasons-item {
+  background-color: $secondary-background;
+}
+
+.reasons__reasons-item-title {
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 10px;
+  color: $alternative-text-color;
+  text-transform: uppercase;
+}
+
+.reasons__reasons-item-number {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 21px;
+  color: $alternative-text-color;
+  text-transform: uppercase;
+}
+
+.reasons__reasons-item-description {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 21px;
+  color: $alternative-text-color;
+  text-transform: uppercase;
+}

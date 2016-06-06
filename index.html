@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to the Sedona</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
   <header class="main-header">
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__items">
-          <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="">Главная</a></li>
           <li class="main-nav__item"><a href="">Фото и видео</a></li>
           <li class="main-nav__item"><a href="">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="">Html Academy</a></li>
@@ -19,31 +20,31 @@
       </div>
     </nav>
     <h1 class="main-header__visually-hidden">Welcome to the Sedona</h1>
-    <div class="main-header__main-logo">
-        <img src="http://placehold.it/150x100" width="370" height="153" alt="Логотип Седона">
-    </div>
+    <div class="main-header__main-logo"></div>
   </header>
   <div class="main-content">
     <h2 class="main-content__main-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
     <p class="main-content__main-text">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
     <section class="reasons">
-        <div class="reasons__reasons-item">
+      <div class="reasons__reasons-item">
         <h3 class="reasons__reasons-item-title">Настоящий городок</h3>
         <div class="reasons__reasons-item-number">- #1 -</div>
         <p class="reasons__reasons-item-description">Седона не атракцион для туристов, там течет своя жизнь</p>
-        <div class="reasons__reasons-item-foto"></div>
-        <div class="reasons__advantages">
-          <div class="reasons__advantages-item">
-            <h3 class="advantages-item__title">Жилье</h3>
-            <p class="advantages-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <div class="reasons__reasons-item-foto">
+          <img src="img/photo-city@1x.jpg" alt="photo-city">
+        </div>
+        <div class="advantages">
+          <div class="advantages__advantages-item">
+            <h3 class="advantages__title">Жилье</h3>
+            <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="reasons__advantages-item">
-            <h3 class="advantages-item__title">Сувениры</h3>
-            <p class="advantages-item__text">Не только китайского, но и местного производства!</p>
+          <div class="advantages__advantages-item">
+            <h3 class="advantages__title">Сувениры</h3>
+            <p class="advantages__text">Не только китайского, но и местного производства!</p>
           </div>
-          <div class="reasons__advantages-item">
-            <h3 class="advantages-item__title">Еда</h3>
-            <p class="advantages-item__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <div class="advantages__advantages-item">
+            <h3 class="advantages__title">Еда</h3>
+            <p class="advantages__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </div>
         </div>
       </div>
@@ -51,7 +52,9 @@
         <h3 class="reasons__reasons-item-title">Там есть мост дьявола</h3>
         <div class="reasons__reasons-item-number">- #2 -</div>
         <p class="reasons__reasons-item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <div class="reasons__reasons-item-foto"></div>
+        <div class="reasons__reasons-item-foto">
+          <img src="img/photo-bridge@1x.jpg" alt="photo-bridge">
+        </div>
       </div>
       <div class="reasons__reasons-item">
         <h3 class="reasons__reasons-item-title">Небольшая площадь</h3>
@@ -75,7 +78,9 @@
       <a class="find-hotel__find-hotel-btn" href="#">Найти гостиницу</a>
     </section>
     <footer class="main-footer">
-      <div class="main-footer__map"></div>
+      <div class="main-footer__map">
+        <img src="img/bg-map-mobile@1x.jpg" alt="map">
+      </div>
       <div class="main-footer__hashtag">#visitsedona</div>
       <div class="main-footer__social">
         <a class="main-footer__social-btn social-btn-tw" href="#">Twitter</a>

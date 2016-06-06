@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Welcome to the Sedona</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
   <header class="main-header">
@@ -18,9 +20,7 @@
       </div>
     </nav>
     <h1 class="main-header__visually-hidden">Welcome to the Sedona</h1>
-    <div class="main-header__main-logo">
-      <a href="index.html"><img src="http://placehold.it/150x100" width="370" height="153" alt="Логотип Седона"></a>
-    </div>
+    <a href="#" class="main-header__main-logo"></a>
   </header>
   <div class="main-content">
     <h2 class="main-content__main-title">Оставьте свой отзыв</h2>
@@ -29,7 +29,7 @@
     <section class="main-form">
       <form class="main-form__form" action="">
         <div class="main-form__name-wrapper">
-          <div class="name-title">Представьтесь, пожалуйста:</div>
+          <div class="main-form__title">Представьтесь, пожалуйста:</div>
           <input id="name" class="main-form__name" type="text">
           <label for="name">Имя</label>
           <input id="surname" class="main-form__surname" type="text">
@@ -38,14 +38,14 @@
           <label for="second-name">Отчество</label>
         </div>
         <div class="main-form__contacts-wrapper">
-          <div class="contact-title">Контактная информация:</div>
+          <div class="main-form__title">Контактная информация:</div>
           <input id="tel" class="main-form__tel" type="tel">
           <label for="tel">Контактный телефон</label>
           <input id="email" class="main-form__email" type="email">
           <label for="email">Электронная почта</label>
         </div>
         <div class="main-form__impression-wrapper">
-          <div class="impression-title">Ваше общее впечатления:</div>
+          <div class="main-form__title">Ваше общее впечатления:</div>
           <input id="positive" type="radio">
           <label for="positive">Скорее положительное</label>
           <input id="negative" type="radio">
@@ -54,7 +54,7 @@
           <label for="neutral">Затрудняюсь ответить</label>
         </div>
         <div class="main-form__sights-wrapper">
-          <div class="sights-title">Посещенные достопримечательности:</div>
+          <div class="main-form__title">Посещенные достопримечательности:</div>
           <input type="checkbox" name="option1" value="#" checked>
           <label for="devil-bridge">Мост Дьявола</label>
           <input id="slide-park" type="checkbox" name="option2" value="#">
@@ -65,7 +65,7 @@
           <label for="red-rocks">Красные скалы</label>
         </div>
         <div class="main-form__emotion-wrapper">
-          <label id="emotion" class="main-form__emotion-title">Опишите свои эмоции:</label>
+          <label id="emotion" class="main-form__title">Опишите свои эмоции:</label>
           <textarea id="emotion" name="" id="" cols="30" rows="10"></textarea>
         </div>
         <input class="main-form__submit-btn" type="submit">
@@ -73,7 +73,9 @@
     </section>
   </div>
   <footer class="main-footer">
-      <div class="main-footer__map"></div>
+      <div class="main-footer__map">
+        <img src="img/bg-map-mobile@1x.jpg" alt="map">
+      </div>
       <div class="main-footer__hashtag">#visitsedona</div>
       <div class="main-footer__social">
         <a class="main-footer__social-btn social-btn-tw" href="#">Twitter</a>
