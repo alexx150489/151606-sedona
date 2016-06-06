@@ -5,8 +5,7 @@
 
 .main-header__main-logo {
   display: block;
-  width: 320px;
-  height: 388px;
+  height: 389px;
   background: url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
 }
 
@@ -14,3 +13,11 @@
   display: none;
 }
 
+@media @tablet-widths {
+
+}
+
+
+@media @desktop-widths {
+
+}
