@@ -1,0 +1,20 @@
+.main-content {
+  @include outline(1px, solid, red);
+  @include container;
+}
+
+.main-content__main-title {
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $base-text-color;
+  text-transform: uppercase;
+}
+
+.main-content__main-text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}
