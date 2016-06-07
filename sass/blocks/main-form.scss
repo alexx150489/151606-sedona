@@ -1,7 +1,56 @@
+.main-form {
+  padding: 0 20px 0 20px;
+  @include clearfix;
+}
+
 .main-form__title {
   font-family: $font-bold;
   font-size: 18px;
   line-height: 26px;
   color: $base-text-color;
   text-transform: uppercase;
+}
+
+.main-form__textarea {
+  width: 280px;
+}
+
+@media #{$tablet-widths} {
+  .main-form {
+    padding: 0 60px 0 60px;
+  }
+
+  .main-form__name-wrapper {
+    float: right;
+    width: 324px;
+  }
+  .main-form__impression-wrapper {
+    clear: both;
+    width: 324px;
+  }
+
+  .main-form__contacts-wrapper {
+     float: left;
+
+    width: 324px;
+  }
+
+  .main-form__sights-wrapper {
+    clear: both;
+    padding: 0 86px 0 86px;
+  }
+
+  .main-form__textarea {
+  width: 648px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-form {
+    padding: 0 120px 0 120px;
+  }
+  .main-form__textarea {
+  width: 960px;
+  }
+
 }

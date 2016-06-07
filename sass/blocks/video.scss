@@ -1,5 +1,6 @@
 .video {
   @include container;
+  padding: 0;
 }
 
 .video__video-title {
@@ -8,6 +9,7 @@
   line-height: 26px;
   color: $base-text-color;
   text-transform: uppercase;
+  padding: 0 20px 0 20px;
 }
 
 .video__video-text {
@@ -16,8 +18,44 @@
   line-height: 24px;
   color: $secondary-text-color;
   text-transform: uppercase;
+  padding: 0 20px 0 20px;
 }
 
 .video__video-player {
-  background: url(../../img/video-mobile@1x.jpg) 0 0 no-repeat;
+  width: 320px;
+  height: 201px;
+  background: url(../img/video-mobile@1x.jpg) 0 0 no-repeat;
+
+}
+
+@media #{$tablet-widths} {
+  .video__video-player {
+  width: 648px;
+  height: 499px;
+  background: url(../img/video-tablet.jpg) top center no-repeat;
+  padding: 0 60px 0 60px;
+  }
+
+  .video__video-title {
+    padding: 0 60px 0 60px;
+  }
+  .video__video-text {
+    padding: 0 60px 0 60px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .video__video-player {
+  width: 800px;
+  height: 500px;
+  background: url(../img/video-desktop.jpg) top center no-repeat;
+  padding: 0 200px 0 200px;
+  }
+  .video__video-title {
+    padding: 0 186px 0 186px;
+  }
+  .video__video-text {
+    padding: 0 186px 0 186px;
+  }
+
 }

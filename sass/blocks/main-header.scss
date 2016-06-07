@@ -6,18 +6,17 @@
 .main-header__main-logo {
   display: block;
   height: 389px;
-  background: url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background: url("../img/bg-back-mobile@1x.jpg") top center no-repeat;
 }
 
 .main-header__visually-hidden {
   display: none;
 }
 
-@media @tablet-widths {
+@media #{$tablet-widths} {
 
 }
 
-
-@media @desktop-widths {
+@media #{$desktop-widths} {
 
 }
