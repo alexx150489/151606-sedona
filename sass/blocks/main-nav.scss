@@ -11,6 +11,14 @@
   font-size: 0;
 }
 
+.main-nav__items {
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: $alternative-text-color;
+  text-transform: uppercase;
+}
+
 .main-nav__item a {
   font-family: $font-bold;
   font-size: 18px;
