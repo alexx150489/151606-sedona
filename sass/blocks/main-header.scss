@@ -5,12 +5,18 @@
 
 .main-header__main-logo {
   display: block;
-  width: 320px;
-  height: 388px;
-  background: url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  height: 389px;
+  background: url("../img/bg-back-mobile@1x.jpg") top center no-repeat;
 }
 
 .main-header__visually-hidden {
   display: none;
 }
 
+@media #{$tablet-widths} {
+
+}
+
+@media #{$desktop-widths} {
+
+}

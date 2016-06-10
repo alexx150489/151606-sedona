@@ -1,6 +1,7 @@
 .main-content {
   @include outline(1px, solid, red);
   @include container;
+
 }
 
 .main-content__main-title {
@@ -9,6 +10,7 @@
   line-height: 26px;
   color: $base-text-color;
   text-transform: uppercase;
+  padding: 0 20px 0 20px;
 }
 
 .main-content__main-text {
@@ -17,4 +19,23 @@
   line-height: 26px;
   color: $secondary-text-color;
   text-transform: uppercase;
+  padding: 0 20px 0 20px;
+}
+
+@media #{$tablet-widths} {
+  .main-content__main-title {
+    padding: 0 60px 0 60px;
+  }
+  .main-content__main-text {
+    padding: 0 60px 0 60px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-content__main-title {
+    padding: 0 380px 0 380px;
+  }
+  .main-content__main-text {
+    padding: 0 380px 0 380px;
+  }
 }

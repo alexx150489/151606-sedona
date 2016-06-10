@@ -30,43 +30,45 @@
       <form class="main-form__form" action="">
         <div class="main-form__name-wrapper">
           <div class="main-form__title">Представьтесь, пожалуйста:</div>
-          <input id="name" class="main-form__name" type="text">
           <label for="name">Имя</label>
-          <input id="surname" class="main-form__surname" type="text">
+          <input id="name" class="main-form__name" type="text"><br>
           <label for="surname">Фамилия</label>
-          <input id="second-name" class="main-form__second-name" type="text">
+          <input id="surname" class="main-form__surname" type="text"><br>
           <label for="second-name">Отчество</label>
+          <input id="second-name" class="main-form__second-name" type="text">
+
         </div>
         <div class="main-form__contacts-wrapper">
           <div class="main-form__title">Контактная информация:</div>
-          <input id="tel" class="main-form__tel" type="tel">
-          <label for="tel">Контактный телефон</label>
+          <label for="tel">Контактный телефон</label><br>
+          <input id="tel" class="main-form__tel" type="tel"><br>
+          <label for="email">Электронная почта</label><br>
           <input id="email" class="main-form__email" type="email">
-          <label for="email">Электронная почта</label>
+
         </div>
         <div class="main-form__impression-wrapper">
           <div class="main-form__title">Ваше общее впечатления:</div>
           <input id="positive" type="radio">
-          <label for="positive">Скорее положительное</label>
+          <label for="positive">Скорее положительное</label><br>
           <input id="negative" type="radio">
-          <label for="negative">Скорее отрицательное</label>
+          <label for="negative">Скорее отрицательное</label><br>
           <input id="neutral" type="radio">
-          <label for="neutral">Затрудняюсь ответить</label>
+          <label for="neutral">Затрудняюсь ответить</label><br>
         </div>
         <div class="main-form__sights-wrapper">
           <div class="main-form__title">Посещенные достопримечательности:</div>
           <input type="checkbox" name="option1" value="#" checked>
-          <label for="devil-bridge">Мост Дьявола</label>
+          <label for="devil-bridge">Мост Дьявола</label><br>
           <input id="slide-park" type="checkbox" name="option2" value="#">
-          <label for="slide-park">Слайд-парк</label>
+          <label for="slide-park">Слайд-парк</label><br>
           <input id="bell-mountain" type="checkbox" name="option3" value="#">
-          <label for="bell-mountain">Гора-Колокол</label>
+          <label for="bell-mountain">Гора-Колокол</label><br>
           <input id="red-rocks" type="checkbox" name="option4" value="#">
-          <label for="red-rocks">Красные скалы</label>
+          <label for="red-rocks">Красные скалы</label><br>
         </div>
         <div class="main-form__emotion-wrapper">
           <label id="emotion" class="main-form__title">Опишите свои эмоции:</label>
-          <textarea id="emotion" name="" id="" cols="30" rows="10"></textarea>
+          <textarea id="emotion" class="main-form__textarea" name="" id="" cols="30" rows="10"></textarea>
         </div>
         <input class="main-form__submit-btn" type="submit">
       </form>
