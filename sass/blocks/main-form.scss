@@ -10,6 +10,11 @@
   color: $base-text-color;
   text-transform: uppercase;
 }
+.main-form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .main-form__textarea {
   width: 280px;
@@ -19,36 +24,59 @@
   .main-form {
     padding: 0 60px 0 60px;
   }
+  .main-form__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 
   .main-form__name-wrapper {
-    float: right;
     width: 324px;
   }
   .main-form__impression-wrapper {
-    clear: both;
+
     width: 324px;
+    order:-1;
   }
 
   .main-form__contacts-wrapper {
-     float: left;
-
-    width: 324px;
+    width: 650px;
   }
 
   .main-form__sights-wrapper {
-    clear: both;
-    padding: 0 86px 0 86px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   }
 
   .main-form__textarea {
   width: 648px;
   }
+
 }
 
 @media #{$desktop-widths} {
   .main-form {
     padding: 0 120px 0 120px;
   }
+
+  .main-form__contacts-wrapper {
+  width: 962px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  .main-form__sights-wrapper {
+  width: 962px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
   .main-form__textarea {
   width: 960px;
   }

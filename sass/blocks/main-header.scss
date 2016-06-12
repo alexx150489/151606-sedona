@@ -6,7 +6,7 @@
 .main-header__main-logo {
   display: block;
   min-height: 389px;
-  background: url("../img/bg-back-mobile@1x.jpg") top center no-repeat;
+  background: url("../img/mobile-logo-bg.jpg") top center no-repeat;
 }
 
 .main-header__visually-hidden {
@@ -14,9 +14,15 @@
 }
 
 @media #{$tablet-widths} {
-
+  .main-header__main-logo {
+    min-height: 518px;
+    background: url("../img/tablet-logo-bg.jpg") top center no-repeat;
+  }
 }
 
 @media #{$desktop-widths} {
-
+   .main-header__main-logo {
+    min-height: 357px;
+    background: url("../img/desktop-logo-bg.jpg") top center no-repeat;
+  }
 }

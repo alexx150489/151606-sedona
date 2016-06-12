@@ -3,6 +3,7 @@
   @include outline(1px, solid, red);
   font-size: 0;
   text-align: center;
+  padding-bottom: 1px;
 }
 
 .main-footer__map {
@@ -12,14 +13,17 @@
 }
 
 .main-footer__hashtag {
-  font-family: $font-bold;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 26px;
-  color: $base-text-color;
+  color: #000000;
   text-transform: uppercase;
+  margin-top: 34px;
+  margin-bottom: 36px;
+  font-weight: bold;
 }
 .main-footer__social {
   font-size: 0;
+  margin-bottom: 45px;
 }
 
 .main-footer__social-btn {
@@ -32,29 +36,40 @@
 }
 
 .main-footer__copyright {
-  font-family: $font-bold;
-  font-size: 21px;
+  font-family: $font;
+  font-size: 14px;
   line-height: 26px;
-  color: $secondary-text-color;
+  color: $base-text-color;
   text-transform: uppercase;
+  margin-bottom: 35px;
 }
 
 @media #{$tablet-widths} {
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   .main-footer__map {
   width: 768px;
   height: 350px;
   background: url(../img/bg-map-tablet.jpg) top center no-repeat;
+  margin-bottom: 36px;
   }
 
   .main-footer__hashtag {
+    margin: 0;
     display: inline-block;
     vertical-align: top;
   }
   .main-footer__social {
+    margin: 0;
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 36px;
   }
   .main-footer__copyright {
+    margin: 0;
     display: inline-block;
     vertical-align: top;
   }
