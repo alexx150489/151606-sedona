@@ -2,6 +2,7 @@
   @include outline(1px, solid, red);
   @include container;
   background-color: $secondary-background;
+  display: none;
 }
 
 .main-nav__items {

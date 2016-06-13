@@ -6,11 +6,11 @@
 }
 
 .main-content__main-title {
-  margin-top: 40px;
+  margin-top: 37px;
   margin-bottom: 24px;
   font-family: $font-bold;
   font-size: 17px;
-  line-height: 26px;
+  line-height: 27px;
   color: $base-text-color;
   text-transform: uppercase;
   text-align: center;
@@ -19,13 +19,13 @@
 
 .main-content__main-text {
   font-family: $font;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 13px;
+  line-height: 24px;
   color: $secondary-text-color;
   text-transform: uppercase;
   text-align: center;
   padding: 0 20px 0 20px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 @media #{$tablet-widths} {
@@ -37,7 +37,19 @@
     line-height: 24px;
   }
   .main-content__main-text {
+    padding: 0 60px;
+  }
+  // photo.html
+  .main-title-photo {
+    margin-top: 75px;
+    margin-bottom: 30px;
     padding: 0 60px 0 60px;
+    font-size: 29px;
+    line-height: 24px;
+  }
+
+  .main-text-photo {
+    padding: 0px 162px;
   }
 }
 
@@ -45,7 +57,13 @@
   .main-content__main-title {
     padding: 0 300px;
   }
-  .main-content__main-text {
-    padding: 0;
+
+  .main-title-photo {
+    margin-top: 111px;
+  }
+
+  .main-text-photo {
+    padding: 0px 380px;
+    margin-bottom: 71px;
   }
 }

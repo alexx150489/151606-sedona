@@ -5,7 +5,7 @@
 
 .main-header__main-logo {
   display: block;
-  min-height: 389px;
+  height: 389px;
   background: url("../img/mobile-logo-bg.jpg") top center no-repeat;
 }
 
@@ -15,14 +15,22 @@
 
 @media #{$tablet-widths} {
   .main-header__main-logo {
-    min-height: 518px;
+    height: 518px;
     background: url("../img/tablet-logo-bg.jpg") top center no-repeat;
+  }
+  .main-header__main-logo--half-size {
+    height: 290px;
+    background: url("../img/tablet-logo-bg.jpg") bottom center no-repeat;
   }
 }
 
 @media #{$desktop-widths} {
    .main-header__main-logo {
-    min-height: 357px;
+    height: 357px;
     background: url("../img/desktop-logo-bg.jpg") top center no-repeat;
+  }
+  .main-header__main-logo--half-size {
+    height: 301px;
+    background: url("../img/desktop-logo-bg.jpg") bottom center no-repeat;
   }
 }
