@@ -3,6 +3,15 @@
   @include outline(1px, solid, red);
 }
 
+.main-header__toggle-navigation {
+  display: block;
+  width: 320px;
+  height: 56px;
+  background-color: white;
+  border: 0;
+  padding: 0;
+}
+
 .main-header__main-logo {
   display: block;
   height: 389px;
@@ -19,6 +28,10 @@
 }
 
 @media #{$tablet-widths} {
+  .main-header__toggle-navigation {
+    display: none;
+  }
+
   .main-header__main-logo {
     height: 518px;
     background: url("../img/tablet-logo-bg.jpg") top center no-repeat;
@@ -30,7 +43,10 @@
 }
 
 @media #{$desktop-widths} {
-   .main-header__main-logo {
+
+
+
+  .main-header__main-logo {
     height: 357px;
     background: url("../img/desktop-logo-bg.jpg") top center no-repeat;
   }
