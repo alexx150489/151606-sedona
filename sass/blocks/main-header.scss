@@ -9,6 +9,11 @@
   background: url("../img/mobile-logo-bg.jpg") top center no-repeat;
 }
 
+.main-header__main-logo--half-size {
+    height: 158px;
+    background: url("../img/mobile-logo-bg.jpg") bottom center no-repeat;
+  }
+
 .main-header__visually-hidden {
   display: none;
 }
