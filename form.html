@@ -9,75 +9,82 @@
 <body>
   <header class="main-header">
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper">
         <ul class="main-nav__items">
-          <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="">Фото и видео</a></li>
-          <li class="main-nav__item"><a href="">Форма отзыва</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="">Html Academy</a></li>
         </ul>
       </div>
     </nav>
+    <button class="main-header__toggle-navigation" type="button"></button>
     <h1 class="main-header__visually-hidden">Welcome to the Sedona</h1>
-    <a href="#" class="main-header__main-logo"></a>
+    <a href="#" class="main-header__main-logo main-header__main-logo--half-size"></a>
   </header>
   <div class="main-content">
-    <h2 class="main-content__main-title">Оставьте свой отзыв</h2>
-    <p class="main-content__main-text">Помогите нашим отелям стать лучше!
+    <h2 class="main-content__main-title main-content__main-title-form">Оставьте свой отзыв</h2>
+    <p class="main-content__main-text main-content__main-text-form">Помогите нашим отелям стать лучше!
     Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <section class="main-form">
       <form class="main-form__form" action="">
         <div class="main-form__name-wrapper">
           <div class="main-form__title">Представьтесь, пожалуйста:</div>
-          <label for="name">Имя</label>
-          <input id="name" class="main-form__name" type="text"><br>
-          <label for="surname">Фамилия</label>
-          <input id="surname" class="main-form__surname" type="text"><br>
-          <label for="second-name">Отчество</label>
-          <input id="second-name" class="main-form__second-name" type="text">
-
+          <div class="main-form__title-short">Представьтесь:</div>
+          <label for="name" class="main-form__label-name">Имя:</label>
+          <input id="name" class="main-form__input-name" type="text">
+          <label for="surname" class="main-form__label-surname">Фамилия:</label>
+          <input id="surname" class="main-form__input-surname" type="text">
+          <label for="second-name" class="main-form__label-second-name">Отчество:</label>
+          <input id="second-name" class="main-form__input-second-name" type="text">
         </div>
+
         <div class="main-form__contacts-wrapper">
           <div class="main-form__title">Контактная информация:</div>
-          <label for="tel">Контактный телефон</label><br>
-          <input id="tel" class="main-form__tel" type="tel"><br>
-          <label for="email">Электронная почта</label><br>
-          <input id="email" class="main-form__email" type="email">
+          <div class="main-form__wrapper">
+            <label for="tel" class="main-form__label-tel">Контактный телефон:</label>
+            <label for="tel" class="main-form__label-tel-short">Телефон:</label>
+            <input id="tel" class="main-form__input-tel" type="tel">
+            <label for="email" class="main-form__label-email">Электронная почта:</label>
+            <input id="email" class="main-form__input-email" type="email">
+          </div>
+        </div>
 
-        </div>
         <div class="main-form__impression-wrapper">
-          <div class="main-form__title">Ваше общее впечатления:</div>
-          <input id="positive" type="radio">
-          <label for="positive">Скорее положительное</label><br>
-          <input id="negative" type="radio">
-          <label for="negative">Скорее отрицательное</label><br>
-          <input id="neutral" type="radio">
-          <label for="neutral">Затрудняюсь ответить</label><br>
+          <div class="main-form__title">Ваше общее впечатление:</div>
+            <input id="positive" type="radio">
+            <label for="positive">Скорее положительное</label>
+            <input id="negative" type="radio">
+            <label for="negative">Скорее отрицательное</label>
+            <input id="neutral" type="radio">
+            <label for="neutral">Затрудняюсь ответить</label>
         </div>
+
         <div class="main-form__sights-wrapper">
           <div class="main-form__title">Посещенные достопримечательности:</div>
-          <input type="checkbox" name="option1" value="#" checked>
-          <label for="devil-bridge">Мост Дьявола</label><br>
-          <input id="slide-park" type="checkbox" name="option2" value="#">
-          <label for="slide-park">Слайд-парк</label><br>
-          <input id="bell-mountain" type="checkbox" name="option3" value="#">
-          <label for="bell-mountain">Гора-Колокол</label><br>
-          <input id="red-rocks" type="checkbox" name="option4" value="#">
-          <label for="red-rocks">Красные скалы</label><br>
+          <div class="main-form__checkbox-wrapper">
+            <input type="checkbox" name="option1" value="#" checked>
+            <label for="devil-bridge" class="main-form__label-radio1">Мост Дьявола</label>
+            <input id="slide-park" type="checkbox" name="option2" value="#">
+            <label for="slide-park" class="main-form__label-radio2">Слайд-парк</label>
+            <input id="bell-mountain" type="checkbox" name="option3" value="#">
+            <label for="bell-mountain" class="main-form__label-radio3">Гора-Колокол</label>
+            <input id="red-rocks" type="checkbox" name="option4" value="#">
+            <label for="red-rocks" class="main-form__label-radio4">Красные скалы</label>
+          </div>
         </div>
         <div class="main-form__emotion-wrapper">
-          <label id="emotion" class="main-form__title">Опишите свои эмоции:</label>
+          <div class="main-form__title">Опишите свои эмоции:</div>
           <textarea id="emotion" class="main-form__textarea" name="" id="" cols="30" rows="10"></textarea>
         </div>
-        <input class="main-form__submit-btn" type="submit">
+        <div class="main-form__submit-wrapper">
+          <input class="main-form__submit-btn" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+          <div class="required-note">* — обязательные поля</div>
+        </div>
       </form>
     </section>
   </div>
   <footer class="main-footer">
-      <div class="main-footer__map">
-        <img src="img/bg-map-mobile@1x.jpg" alt="map">
-      </div>
       <div class="main-footer__hashtag">#visitsedona</div>
       <div class="main-footer__social">
         <a class="main-footer__social-btn social-btn-tw" href="#">Twitter</a>
