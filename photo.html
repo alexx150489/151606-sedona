@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Welcome to the Sedona</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
   <header class="main-header">
@@ -20,14 +19,22 @@
     </nav>
     <button class="main-header__toggle-navigation" type="button"></button>
     <h1 class="main-header__visually-hidden">Welcome to the Sedona</h1>
-    <a href="index.html" class="main-header__main-logo main-header__main-logo--half-size"></a>
+    <a href="index.html" class="main-header__main-logo main-header__main-logo--half-size">
+      <img class="sedona-logo-half" src="img/text-sedona.svg" width="229" height="39" alt="Логотип Седона">
+    </a>
   </header>
   <div class="main-content">
     <h2 class="main-content__main-title  main-title-photo">Фото и видео</h2>
     <p class="main-content__main-text  main-text-photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     <section class="photo">
       <div class="photo__photo-item">
-        <div class="photo__photo-img"></div>
+        <div class="photo__photo-img">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"  alt="Неродные просторы">
+          </picture>
+        </div>
         <div class="photo__info">
           <h3 class="photo__photo-title">Неродные просторы</h3>
           <span class="photo__photo-author">Автор фото: Борис</span>
@@ -36,7 +43,11 @@
       </div>
       <div class="photo__photo-item">
         <div class="photo__photo-img">
-
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"  alt="Растительность">
+          </picture>
         </div>
         <div class="photo__info">
           <h3 class="photo__photo-title">Местная растительность</h3>
@@ -46,7 +57,11 @@
       </div>
       <div class="photo__photo-item">
         <div class="photo__photo-img">
-
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"  alt="Дорога на север">
+          </picture>
         </div>
         <div class="photo__info">
           <h3 class="photo__photo-title">Дорога на север</h3>
@@ -56,7 +71,11 @@
       </div>
       <div class="photo__photo-item">
         <div class="photo__photo-img">
-
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"  alt="Мост Дьявола">
+          </picture>
         </div>
         <div class="photo__info">
           <h3 class="photo__photo-title">Мост дьявола</h3>

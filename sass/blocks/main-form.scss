@@ -212,7 +212,6 @@
 
 //TAB VERSION!!!
 @media #{$tablet-widths} {
-
   .main-form {
     padding: 0 60px 0 60px;
   }
@@ -373,7 +372,6 @@
     text-transform: uppercase;
     padding: 0;
     margin-bottom: 56px;
-
   }
 
   .main-form__textarea {
@@ -401,16 +399,13 @@
     line-height: 26px;
     text-transform: uppercase;
     padding-top: 17px;
-
-}
-
+  }
 }
 
 @media #{$desktop-widths} {
   .main-form {
     padding: 0 120px 0 120px;
   }
-
 
 //IMPRESSION DESK
   .main-form__name-wrapper .main-form__title-short {
@@ -531,5 +526,4 @@
     width: 480px;
     margin: 0;
   }
-
 }

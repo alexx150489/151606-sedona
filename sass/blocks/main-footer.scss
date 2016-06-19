@@ -8,23 +8,37 @@
 }
 
 .main-footer__map {
+  position: relative;
   width: 320px;
   height: 351px;
   background: url(../img/bg-map-mobile@1x.jpg) top center no-repeat;
 }
 
+.main-footer__map::after {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 27px;
+  top: 161px;
+  left: 146px;
+  background: url(../img/icon-map-marker.svg) 0 0 no-repeat;
+}
+
 .main-footer__hashtag {
-  font-size: 19px;
+  font-family: $font-bold;
+  font-size: 21px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 74px;
+  margin-top: 35px;
   margin-bottom: 36px;
   font-weight: bold;
 }
+
 .main-footer__social {
   font-size: 0;
-  margin-bottom: 45px;
+  margin-bottom: 42px;
+  padding: 0 66px;
 }
 
 .main-footer__social-btn {
@@ -32,19 +46,85 @@
   vertical-align: top;
   width: 47px;
   height: 48px;
-  margin-right: 10px;
+  margin-right: 6px;
   background-color: $secondary-background;
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+.main-footer__social-btn:hover {
+  background-color: #669ec0;
+}
+
+.main-footer__social-btn:active {
+  background-color: #5496bd;
+}
+
+.main-footer__social-btn:last-child {
+  margin-right: 0;
 }
 
 .main-footer__copyright {
+  position: relative;
   font-family: $font;
   font-size: 14px;
   line-height: 26px;
   color: $base-text-color;
+  text-align: left;
   text-transform: uppercase;
   margin-bottom: 35px;
+  padding: 0 97px;
 }
 
+.main-footer__academy-icon {
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  top: -2px;
+  right: 96px;
+  transition-duration: 0.3s;
+}
+
+.main-footer__academy-icon:hover {
+  fill: $secondary-background;
+}
+
+.main-footer__academy-icon:active {
+  fill: #b2b2b2;
+}
+
+.main-footer__icon-twitter {
+  position: absolute;
+  width: 19px;
+  height: 15px;
+  top: 17px;
+  left: 15px;
+  fill: $base-background;
+}
+
+.main-footer__icon-twitter:active {
+  fill: #88b6d1;
+}
+
+.main-footer__icon-facebook {
+  position: absolute;
+  width: 9px;
+  height: 19px;
+  top: 14px;
+  left: 20px;
+  fill: $base-background;
+}
+
+.main-footer__icon-youtube {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  top: 17px;
+  left: 13px;
+  fill: $base-background;
+}
+
+//TAB
 @media #{$tablet-widths} {
   .main-footer {
     display: flex;
@@ -58,24 +138,35 @@
   margin-bottom: 36px;
   }
 
+  .main-footer__map::after {
+    top: 164px;
+    left: 370px;
+  }
+
   .main-footer__hashtag {
+    padding: 0;
     margin: 0;
-    display: inline-block;
-    vertical-align: top;
+    padding-top: 8px;
   }
   .main-footer__social {
+    padding: 0;
     margin: 0;
-    display: inline-block;
-    vertical-align: top;
     margin-bottom: 36px;
   }
   .main-footer__copyright {
+    padding: 0;
     margin: 0;
-    display: inline-block;
-    vertical-align: top;
+    padding-right: 40px;
+    padding-top: 9px;
+  }
+
+  .main-footer__academy-icon {
+    top: 6px;
+    right: 1px;
   }
 }
 
+//DESK
 @media #{$desktop-widths} {
   .main-footer__map {
   width: 1200px;

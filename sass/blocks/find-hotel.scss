@@ -6,7 +6,7 @@
 
 .find-hotel__find-hotel-title {
   font-family: "PT Sans Bold", sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
@@ -35,6 +35,16 @@
   color: $alternative-text-color;
   text-transform: uppercase;
   margin-bottom: 49px;
+  transition-duration: 0.3s;
+}
+
+.find-hotel__find-hotel-btn:hover {
+  background-color: #669ec0;
+}
+
+.find-hotel__find-hotel-btn:active {
+  background-color: #5496bd;
+  color: #88b6d1;
 
 }
 
@@ -42,12 +52,12 @@
   .find-hotel__find-hotel-title {
     font-size:30px;
     line-height: 26px;
-    margin-top: 53px;
+    margin-top: 55px;
     margin-bottom: 29px;
 
   }
   .find-hotel__find-hotel-text {
-    margin-bottom: 17px;
+    margin-bottom: 42px;
     padding: 0 160px;
   }
 
