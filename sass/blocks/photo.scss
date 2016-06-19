@@ -48,7 +48,7 @@
 .photo__photo-title {
   display: block;
   font-family: $font-bold;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
   color: $base-text-color;
   text-transform: uppercase;
@@ -64,6 +64,7 @@
 }
 
 .photo__photo-like {
+  position: relative;
   display: block;
   font-family: $font;
   font-size: 14px;
@@ -74,7 +75,15 @@
   text-transform: uppercase;
   padding-left: 35px;
   margin-bottom: 17px;
+}
 
+.photo__icon-like {
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  top: 0px;
+  left: 0px;
+  fill: #b2b2b2;
 }
 
 @media #{$tablet-widths} {
@@ -84,7 +93,6 @@
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-
   }
 
   .photo__photo-item {
@@ -152,9 +160,14 @@
 
   .photo__photo-like {
     position: absolute;
+    width: 31px;
     right: 23px;
     bottom: 26px;
     margin: 0;
+  }
+
+  .photo__icon-like {
+    left: 4px;
   }
 }
 
