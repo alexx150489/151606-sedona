@@ -33,14 +33,18 @@
 .main-header__main-logo {
   padding-top: 1px;
   display: block;
+
   height: 389px;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom center, top center;
   background-repeat: no-repeat, no-repeat;
+
+
   @media #{$retina} {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
     background-position: bottom center, top center;
     background-repeat: no-repeat, no-repeat;
+
   }
 }
 
@@ -49,6 +53,7 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
     background-position: bottom center, bottom center;
     background-repeat: no-repeat, no-repeat;
+
     @media #{$retina} {
       background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
       background-position: bottom center, bottom center;

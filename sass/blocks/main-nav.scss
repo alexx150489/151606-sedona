@@ -11,8 +11,6 @@
   position: relative;
 }
 
-
-
 .main-nav__item a {
   display: block;
   width: 320px;
@@ -140,7 +138,6 @@
     display: none;
   }
 }
-
 
 @media #{$desktop-widths} {
   .main-nav__items::before {
