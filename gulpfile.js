@@ -41,7 +41,7 @@ gulp.task("style", function() {
 gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
+       imagemin.optipng({optimizationLevel: 3}),
        imagemin.jpegtran({progressive: true})
   ]))
   .pipe(gulp.dest("build/img"));
