@@ -1,6 +1,6 @@
 .main-header {
   @include container;
-  @include outline(1px, solid, red);
+
 }
 
 .main-header__toggle-navigation {

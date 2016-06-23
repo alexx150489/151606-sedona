@@ -31,10 +31,10 @@ gulp.task("style", function() {
       sort: true
       })
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(server.reload({stream: true}));
 });
 
@@ -84,9 +84,9 @@ gulp.task("build", function(fn) {
   );
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", ["style"], function() {
   server.init({
-    server: "build",
+    server: ".",
     notify: false,
     open: true,
     ui: false

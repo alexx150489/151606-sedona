@@ -11,7 +11,14 @@
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__wrapper">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="">Главная</a></li>
+          <li class="main-nav__item">
+            <a href="">Главная</a>
+            <svg class="main-nav__close-btn" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+                <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199
+                    22.199,19.396 13.903,11.1 "/>
+            </svg>
+          </li>
           <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
           <li class="main-nav__item main-nav__item--active"><a href="#">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="http://htmlacademy.ru">Html Academy</a></li>
@@ -43,11 +50,11 @@
           <div class="main-form__title">Представьтесь, пожалуйста:</div>
           <div class="main-form__title-short">Представьтесь:</div>
           <label for="name" class="main-form__label-name">Имя:</label>
-          <input id="name" class="main-form__input-name" type="text">
+          <input id="name" class="main-form__input-name" type="text" placeholder="Петр">
           <label for="surname" class="main-form__label-surname">Фамилия:</label>
-          <input id="surname" class="main-form__input-surname" type="text">
+          <input id="surname" class="main-form__input-surname" type="text" placeholder="Иванов">
           <label for="second-name" class="main-form__label-second-name">Отчество:</label>
-          <input id="second-name" class="main-form__input-second-name" type="text">
+          <input id="second-name" class="main-form__input-second-name" type="text" placeholder="Александрович">
         </div>
 
         <div class="main-form__contacts-wrapper">
@@ -55,38 +62,38 @@
           <div class="main-form__wrapper">
             <label for="tel" class="main-form__label-tel">Контактный телефон:</label>
             <label for="tel" class="main-form__label-tel-short">Телефон:</label>
-            <input id="tel" class="main-form__input-tel" type="tel">
+            <input id="tel" class="main-form__input-tel" type="tel" placeholder="Введите телефон">
             <label for="email" class="main-form__label-email">Электронная почта:</label>
-            <input id="email" class="main-form__input-email" type="email">
+            <input id="email" class="main-form__input-email" type="email" placeholder="Введите email">
           </div>
         </div>
 
         <div class="main-form__impression-wrapper">
           <div class="main-form__title">Ваше общее впечатление:</div>
-            <input id="positive" type="radio">
+            <input id="positive" type="radio" name="impression-radio" value="positive" checked>
             <label for="positive">Скорее положительное</label>
-            <input id="negative" type="radio">
+            <input id="negative" type="radio" name="impression-radio" value="negative">
             <label for="negative">Скорее отрицательное</label>
-            <input id="neutral" type="radio">
+            <input id="neutral" type="radio" name="impression-radio" value="neutral">
             <label for="neutral">Затрудняюсь ответить</label>
         </div>
 
         <div class="main-form__sights-wrapper">
           <div class="main-form__title">Посещенные достопримечательности:</div>
           <div class="main-form__checkbox-wrapper">
-            <input type="checkbox" name="option1" value="#" checked>
+            <input id="devil-bridge" type="checkbox" name="option1" value="#" checked>
             <label for="devil-bridge" class="main-form__label-radio1">Мост Дьявола</label>
-            <input id="slide-park" type="checkbox" name="option2" value="#">
+            <input id="slide-park" type="checkbox" name="option2" value="#" checked>
             <label for="slide-park" class="main-form__label-radio2">Слайд-парк</label>
             <input id="bell-mountain" type="checkbox" name="option3" value="#">
             <label for="bell-mountain" class="main-form__label-radio3">Гора-Колокол</label>
-            <input id="red-rocks" type="checkbox" name="option4" value="#">
+            <input id="red-rocks" type="checkbox" name="option4" value="#" checked>
             <label for="red-rocks" class="main-form__label-radio4">Красные скалы</label>
           </div>
         </div>
         <div class="main-form__emotion-wrapper">
           <div class="main-form__title">Опишите свои эмоции:</div>
-          <textarea id="emotion" class="main-form__textarea" name="" id="" cols="30" rows="10"></textarea>
+          <textarea id="emotion" class="main-form__textarea" name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <div class="main-form__submit-wrapper">
           <input class="main-form__submit-btn" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
@@ -95,7 +102,7 @@
       </form>
     </section>
   </div>
-  <footer class="main-footer">
+  <footer class="main-footer main-footer-form">
       <div class="main-footer__hashtag">#visitsedona</div>
       <div class="main-footer__social">
         <a class="main-footer__social-btn social-btn-tw" href="#">
