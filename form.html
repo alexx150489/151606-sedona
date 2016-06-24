@@ -12,7 +12,7 @@
         <div class="main-nav__wrapper">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="">Главная</a>
+            <a href="index.html">Главная</a>
             <svg class="main-nav__close-btn" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
                 <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199
@@ -47,8 +47,12 @@
     <section class="main-form">
       <form class="main-form__form" action="">
         <div class="main-form__name-wrapper">
-          <div class="main-form__title">Представьтесь, пожалуйста:</div>
-          <div class="main-form__title-short">Представьтесь:</div>
+          <div class="main-form__title">
+            <h2>Представьтесь, пожалуйста:</h2>
+          </div>
+          <div class="main-form__title main-form__title--short">
+            <h2>Представьтесь:</h2>
+          </div>
           <label for="name" class="main-form__label-name">Имя:</label>
           <input id="name" class="main-form__input-name" type="text" placeholder="Петр">
           <label for="surname" class="main-form__label-surname">Фамилия:</label>
@@ -58,18 +62,23 @@
         </div>
 
         <div class="main-form__contacts-wrapper">
-          <div class="main-form__title">Контактная информация:</div>
+          <div class="main-form__title">
+            <h2>Контактная информация:</h2>
+          </div>
           <div class="main-form__wrapper">
             <label for="tel" class="main-form__label-tel">Контактный телефон:</label>
-            <label for="tel" class="main-form__label-tel-short">Телефон:</label>
+            <label for="tel" class="main-form__label-tel--short">Телефон:</label>
             <input id="tel" class="main-form__input-tel" type="tel" placeholder="Введите телефон">
+            <input id="tel" class="main-form__input-tel main-form__input-tel--alt" type="tel" placeholder="Введите номер">
             <label for="email" class="main-form__label-email">Электронная почта:</label>
-            <input id="email" class="main-form__input-email" type="email" placeholder="Введите email">
+            <input id="email" class="main-form__input-email" type="email" placeholder="Введите e-mail">
           </div>
         </div>
 
         <div class="main-form__impression-wrapper">
-          <div class="main-form__title">Ваше общее впечатление:</div>
+          <div class="main-form__title">
+             <h2>Ваше общее впечатление:</h2>
+          </div>
             <input id="positive" type="radio" name="impression-radio" value="positive" checked>
             <label for="positive">Скорее положительное</label>
             <input id="negative" type="radio" name="impression-radio" value="negative">
@@ -79,7 +88,9 @@
         </div>
 
         <div class="main-form__sights-wrapper">
-          <div class="main-form__title">Посещенные достопримечательности:</div>
+          <div class="main-form__title">
+            <h2>Посещенные достопримечательности:</h2>
+          </div>
           <div class="main-form__checkbox-wrapper">
             <input id="devil-bridge" type="checkbox" name="option1" value="#" checked>
             <label for="devil-bridge" class="main-form__label-radio1">Мост Дьявола</label>
@@ -92,7 +103,9 @@
           </div>
         </div>
         <div class="main-form__emotion-wrapper">
-          <div class="main-form__title">Опишите свои эмоции:</div>
+          <div class="main-form__title">
+            <h2>Опишите свои эмоции:</h2>
+          </div>
           <textarea id="emotion" class="main-form__textarea" name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <div class="main-form__submit-wrapper">
