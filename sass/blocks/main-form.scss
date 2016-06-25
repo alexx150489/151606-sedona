@@ -33,6 +33,12 @@
   text-transform: uppercase;
 }
 
+.main-form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 //NAME
 .main-form__name-wrapper {
     border-top: 1px solid #e5e5e5;
@@ -41,10 +47,8 @@
     margin-bottom: 3px;
 }
 
-.main-form__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-form__name-wrapper .main-form__title {
+  margin-bottom: 22px;
 }
 
 .main-form input[type="text"] {
@@ -112,13 +116,20 @@ input[type="text"]:-ms-input-placeholder  {
 .main-form__contacts-wrapper {
   border-top: 1px solid #e5e5e5;
   padding: 18px 20px 0 20px;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
+}
+
+.main-form__contacts-wrapper .main-form__title {
+  margin-bottom: 18px;
+}
+
+.main-form__contacts-wrapper .main-form__wrapper {
+  position: relative;
 }
 
 .main-form__input-tel--alt {
   display: none;
 }
-
 
 .main-form__input-tel {
   padding: 0;
@@ -171,6 +182,17 @@ input[type="tel"]::-webkit-input-placeholder {
   top: 29px;
   left: 200px;
   background: #e6e6e6 url("../img/icon-phone.svg") center no-repeat;
+}
+
+.main-form__warning {
+  position: absolute;
+  display: inline;
+  top: 97px;
+  left: 22px;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ff5c5c;
 }
 
 .main-form__input-email {
@@ -311,7 +333,7 @@ input[type="email"]::-webkit-input-placeholder {
   width: 201px;
   height: 56px;
   margin-left: 0;
-  padding-left: 79px;
+  padding-left: 78px;
   font-size: 18px;
   text-transform: none;
   line-height: 26px;
@@ -556,6 +578,11 @@ textarea:-ms-input-placeholder  {
     z-index: 1;
   }
 
+  .main-form__warning {
+    left: 457px;
+    top: 0px;
+  }
+
   .main-form__input-tel {
     width: 648px;
     margin-bottom: 23px;
@@ -795,7 +822,10 @@ textarea:-ms-input-placeholder  {
     align-items: baseline;
   }
 
-
+  .main-form__warning {
+    top: -27px;
+    left: 106px;
+  }
 
   .main-form__label-tel {
     display: none;
@@ -825,11 +855,12 @@ textarea:-ms-input-placeholder  {
     display: inline;
   }
 
-
   .main-form__input-tel {
     width: 315px;
     margin-right: 80px;
   }
+
+
 
   .main-form__label-email {
     margin-right: 21px;

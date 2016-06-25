@@ -1,6 +1,5 @@
 .main-footer {
   @include container;
-  @include outline(1px, solid, red);
   font-size: 0;
   text-align: center;
   padding-bottom: 1px;
@@ -15,6 +14,7 @@
 }
 
 .main-footer__map::after {
+  display:none;
   position: absolute;
   content: "";
   width: 27px;
@@ -22,6 +22,11 @@
   top: 161px;
   left: 146px;
   background: url(../img/icon-map-marker.svg) 0 0 no-repeat;
+}
+
+.main-footer_google-map {
+  width: 320px;
+  height: 350px;
 }
 
 .main-footer__hashtag {
@@ -152,6 +157,11 @@
     left: 370px;
   }
 
+  .main-footer_google-map {
+    width: 768px;
+    height: 350px;
+  }
+
   .main-footer__hashtag {
     padding: 0;
     margin: 0;
@@ -190,6 +200,11 @@
   .main-footer__map::after {
     top: 162px;
     left: 586px;
+  }
+
+  .main-footer_google-map {
+  width: 1200px;
+  height: 350px;
   }
 
   .main-footer__hashtag {

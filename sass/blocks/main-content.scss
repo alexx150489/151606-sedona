@@ -1,5 +1,4 @@
 .main-content {
-  @include outline(1px, solid, red);
   @include container;
   padding-top: 1px;
 }
