@@ -462,6 +462,7 @@ textarea:-ms-input-placeholder  {
 
 //ОКНО ОШИБКИ
 .main-form__failure {
+  display: none;
   width: 400px;
   height: 347px;
   background-color: $base-background;
@@ -518,13 +519,22 @@ textarea:-ms-input-placeholder  {
   color: #88b6d1;
 }
 
+.modal-form__failure-show {
+  display: block;
+}
+
 //ОКНО УСПЕШНОЙ ОТПРАВКИ
 .modal-form__success {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 300px;
   width: 640px;
   height: 347px;
   background-color: $base-background;
   box-shadow: 0 0 10px 1px lightgray;
   padding-top: 1px;
+  z-index: 99;
 }
 
 .main-form__success-title {
@@ -580,6 +590,10 @@ textarea:-ms-input-placeholder  {
 .main-form__success-button:active {
   background-color: #5496bd;
   color: #88b6d1;
+}
+
+.modal-form__success-show {
+  display: block;
 }
 
 

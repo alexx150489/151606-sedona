@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width">
   <title>Welcome to the Sedona</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -164,10 +164,19 @@
     <section class="video">
       <h3 class="video__video-title">Все еще сомневаетесь?</h3>
       <p class="video__video-text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <div class="video__video-player__wrapper">
-        <div class="video__time-line"></div>
-        <div class="video__video-player__control-panel"></div>
+      <div class="video__video-player-wrapper">
+        <div class="video__control-panel">
+          <img class="icon-replay" src="img/icon-video-replay.svg" alt="replay">
+          <img class="icon-fullscreen" src="img/icon-video-fullscreen.svg" alt="fullscreen">
+          <img class="icon-subtitles" src="img/icon-video-subtitles.svg" alt="subtitles">
+        </div>
+        <div class="video__control-panel-second">
+          <img class="icon-replay" src="img/icon-replay-mob.svg" alt="replay">
+          <img class="icon-subtitles" src="img/icon-subtitles-mob.svg" alt="subtitles">
+          <img class="icon-fullscreen" src="img/icon-fullscreen-mob.svg" alt="fullscreen">
+        </div>
       </div>
+
     </section>
   </div>
   <footer class="main-footer">
@@ -218,5 +227,6 @@
         </a>
       </div>
     </footer>
+<script src="js/menu.js"></script>
 </body>
 </html>

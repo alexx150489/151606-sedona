@@ -40,14 +40,13 @@
 .main-header__main-logo {
   padding-top: 1px;
   display: block;
-
   height: 389px;
+  background-color: #D5E6F0;
   background-image: url("../img/intro-triangle-mobile.png"), url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom center, top center;
   background-repeat: no-repeat, no-repeat;
-
-
   @media #{$retina} {
+    background-color: #D5E6F0;
     background-image: url("../img/intro-triangle-mobile.png"), url("../img/bg-back-mobile@2x.jpg");
     background-position: bottom center, top center;
     background-repeat: no-repeat, no-repeat;
@@ -55,12 +54,14 @@
 }
 
 .main-header__main-logo--half-size {
+    background-color: #D5E6F0;
     height: 158px;
     background-image: url("../img/intro-triangle-mobile.png"), url("../img/bg-back-mobile@1x.jpg");
     background-position: bottom center, bottom center;
     background-repeat: no-repeat, no-repeat;
 
     @media #{$retina} {
+      background-color: #D5E6F0;
       background-image: url("../img/intro-triangle-mobile.png"), url("../img/bg-back-mobile@2x.jpg");
       background-position: bottom center, bottom center;
       background-repeat: no-repeat, no-repeat;
@@ -81,6 +82,10 @@
 }
 
 .main-header__visually-hidden {
+  display: none;
+}
+
+.main-header__burger-hidden {
   display: none;
 }
 
