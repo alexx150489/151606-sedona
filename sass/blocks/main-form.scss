@@ -459,6 +459,131 @@ textarea:-ms-input-placeholder  {
   display: none;
 }
 
+
+//ОКНО ОШИБКИ
+.main-form__failure {
+  width: 400px;
+  height: 347px;
+  background-color: $base-background;
+  padding-top: 1px;
+  box-shadow: 0 0 10px 1px lightgray;
+}
+
+.main-form__failure-title {
+  font-family: $font-bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $base-text-color;
+  padding: 0 79px;
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 22px;
+}
+
+.main-form__failure-text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $base-text-color;
+  margin-bottom: 34px;
+  padding: 0 61px;
+  text-align: center;
+}
+
+.main-form__failure-button {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  width: 272px;
+  height: 58px;
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: $secondary-background;
+  color: $alternative-text-color;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.main-form__failure-button:hover {
+  background-color: #669ec0;
+}
+
+.main-form__failure-button:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+//ОКНО УСПЕШНОЙ ОТПРАВКИ
+.modal-form__success {
+  width: 640px;
+  height: 347px;
+  background-color: $base-background;
+  box-shadow: 0 0 10px 1px lightgray;
+  padding-top: 1px;
+}
+
+.main-form__success-title {
+  font-family: $font-bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $base-text-color;
+  padding: 0 79px;
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 22px;
+}
+
+.main-form__success-text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $base-text-color;
+  margin-bottom: 34px;
+  padding: 0 61px;
+  text-align: center;
+}
+
+.main-form__success-button-wrapper {
+  width: 640px;
+  height: 146px;
+  background-color: $input-background;
+  padding-top: 1px;
+}
+
+.main-form__success-button {
+  display: block;
+  margin: 43px auto;
+  padding: 0;
+  border: none;
+  width: 458px;
+  height: 58px;
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: $secondary-background;
+  color: $alternative-text-color;
+  cursor: pointer;
+}
+
+.main-form__success-button:hover {
+  background-color: #669ec0;
+}
+
+.main-form__success-button:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+
+
 //TAB VERSION!!!
 @media #{$tablet-widths} {
   .main-form {

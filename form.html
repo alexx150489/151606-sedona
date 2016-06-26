@@ -20,12 +20,15 @@
             </svg>
           </li>
           <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__sedona-icon"><a href="index.html"></a></li>
           <li class="main-nav__item main-nav__item--active"><a href="#">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="http://htmlacademy.ru">Html Academy</a></li>
         </ul>
       </div>
     </nav>
-    <button class="main-header__toggle-navigation" type="button">
+    <div class="main-header__toggle-navigation">
+      <a class="main-header__sedona-icon" href="index.html"></a>
+      <button class="main-header__burger-btn-wrapper">
       <svg class="main-header__burger-btn" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
         <g>
@@ -34,7 +37,8 @@
             <rect y="18.018" width="22.928" height="3.964"/>
         </g>
       </svg>
-    </button>
+      </button>
+    </div>
     <h1 class="main-header__visually-hidden">Welcome to the Sedona</h1>
     <a href="index.html" class="main-header__main-logo main-header__main-logo--half-size">
       <img class="sedona-logo-half" src="img/text-sedona.svg" width="229" height="39" alt="Логотип Седона">
@@ -164,5 +168,18 @@
         </a>
       </div>
     </footer>
+    <div class="main-form__failure">
+      <div class="main-form__failure-title">Что-то пошло не так!</div>
+      <div class="main-form__failure-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+      <button class="main-form__failure-button">Ок</button>
+    </div>
+    <div class="modal-form__success">
+      <div class="main-form__success-title">Ваш отзыв отправлен!</div>
+      <div class="main-form__success-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+В ближайшее время мы опубликуем его на сайте.</div>
+      <div class="main-form__success-button-wrapper">
+        <button class="main-form__success-button">Закрыть окно</button>
+      </div>
+    </div>
 </body>
 </html>

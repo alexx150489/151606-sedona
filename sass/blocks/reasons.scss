@@ -1,8 +1,13 @@
 .reasons {
-  background-color: $alternative-background;
   font-size: 0;
   padding-top: 1px;
   padding-bottom: 1px;
+}
+
+.reasons__reasons-wrapper {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #eeeeee;
 }
 
 .reasons__reasons-info {
