@@ -1,33 +1,33 @@
 var form = document.querySelector("form");
 var tel = form.querySelector("[type=tel]");
 var email = form.querySelector("[type=email]");
-var success = document.querySelector(".modal-form__success");
+var success = document.querySelector(".main-form__success");
 var closeSuccess = document.querySelector(".main-form__success-button");
-var failure = document.querySelector(".modal-form__failure");
+var failure = document.querySelector(".main-form__failure");
 var closeFailure = document.querySelector(".main-form__failure-button");
 
 form.addEventListener("submit", function(event) {
-  event.preventDefault();
-  success.classList.add("modal-form__success-show");
+  if (!tel.value) {
+    event.preventDefault();
+    failure.classList.add("main-form__failure-show");
+  } else {
+    event.preventDefault();
+    success.classList.add("main-form__success-show");
+  }
+});
+
+closeFailure.addEventListener("click", function(event) {
+event.preventDefault();
+failure.classList.remove("main-form__failure-show");
 });
 
 closeSuccess.addEventListener("click", function(event) {
-  event.preventDefault();
-  success.classList.remove("modal-form__success-show");
-}
-
-form.addEventListener("submit", function(event) {
-if (!tel.value || !email.value) {
 event.preventDefault();
-failure.classList.add("modal-form__failure-show");
-}
+success.classList.remove("main-form__success-show");
 });
 
 
-closeFailure.addEventListener("click", function(event) {
-  event.preventDefault();
-  failure.classList.remove("modal-form__failure-show");
-}
+
 
 
 

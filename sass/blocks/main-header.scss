@@ -26,11 +26,16 @@
 }
 
 .main-header__burger-btn-wrapper {
+    display: none;
     border: 0;
     padding: 0;
     background-color: white;
     margin: 19px 19px 0 0;
     cursor: pointer;
+}
+
+.main-header__burger-btn-wrapper--show {
+  display: inline-block;
 }
 
 .main-header__burger-btn {

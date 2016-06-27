@@ -2,12 +2,12 @@
   @include container;
 }
 
-.main-nav {
-  display: none;
+.main-nav--open {
+  display: block;
 }
 
-.main-nav--show {
-  display: block;
+.main-nav--close {
+  display: none;
 }
 
 .main-nav__items {
