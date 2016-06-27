@@ -47,6 +47,7 @@
 }
 
 .main-footer__social-btn {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 47px;
@@ -98,35 +99,46 @@
   fill: #b2b2b2;
 }
 
-.main-footer__icon-twitter {
+.main-footer__social-btn-tw::before {
+  content: '';
   position: absolute;
   width: 19px;
   height: 15px;
-  top: 17px;
-  left: 15px;
-  fill: $base-background;
+  top: 16px;
+  left: 14px;
+  background: url(../img/icon-twitter.svg) 0 0 no-repeat;
 }
 
-.main-footer__icon-twitter:active {
-  fill: #88b6d1;
+.main-footer__social-btn-tw:active::before {
+  opacity: 0.3;
 }
 
-.main-footer__icon-facebook {
+.main-footer__social-btn-fb::before {
+  content: '';
   position: absolute;
   width: 9px;
   height: 19px;
-  top: 14px;
-  left: 20px;
-  fill: $base-background;
+  top: 13px;
+  left: 19px;
+  background: url(../img/icon-facebook.svg) 0 0 no-repeat;
 }
 
-.main-footer__icon-youtube {
+.main-footer__social-btn-fb:active::before {
+  opacity: 0.3;
+}
+
+.main-footer__social-btn-yt::before {
+  content: '';
   position: absolute;
   width: 20px;
   height: 14px;
   top: 17px;
-  left: 13px;
-  fill: $base-background;
+  left: 14px;
+  background: url(../img/icon-youtube.svg) 0 0 no-repeat;
+}
+
+.main-footer__social-btn-yt:active::before {
+  opacity: 0.3;
 }
 
 .main-footer-form {

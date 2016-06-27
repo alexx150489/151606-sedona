@@ -22,6 +22,7 @@
   top: 0px;
   left: 110px;
   background: url("../img/logo-sedona-mobile.svg") 0 0 no-repeat;
+  z-index: 1;
 }
 
 .main-header__burger-btn-wrapper {
@@ -34,39 +35,42 @@
 
 .main-header__burger-btn {
   fill: $secondary-background;
-
 }
 
 .main-header__main-logo {
+  position: relative;
   padding-top: 1px;
   display: block;
-  height: 389px;
+  width: 320px;
+  height: 388px;
   background-color: #D5E6F0;
-  background-image: url("../img/intro-triangle-mobile.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom center, top center;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
   @media #{$retina} {
-    background-color: #D5E6F0;
-    background-image: url("../img/intro-triangle-mobile.png"), url("../img/bg-back-mobile@2x.jpg");
-    background-position: bottom center, top center;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+  }
+  &--half-size {
+    height: 158px;
+    background-position: 50% 100%;
+    background-size: auto;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 320px;
+    height: 59px;
+    background-image: url(../img/intro-triangle-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
 
-.main-header__main-logo--half-size {
-    background-color: #D5E6F0;
-    height: 158px;
-    background-image: url("../img/intro-triangle-mobile.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: bottom center, bottom center;
-    background-repeat: no-repeat, no-repeat;
 
-    @media #{$retina} {
-      background-color: #D5E6F0;
-      background-image: url("../img/intro-triangle-mobile.png"), url("../img/bg-back-mobile@2x.jpg");
-      background-position: bottom center, bottom center;
-      background-repeat: no-repeat, no-repeat;
-    }
-  }
+
 .sedona-logo-full {
   width: 282px;
   height: 214px;
@@ -95,31 +99,25 @@
   }
 
   .main-header__main-logo {
+    width: 768px;
     height: 518px;
-    background-image: url("../img/intro-triangle-tablet.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-size: auto;
-    background-position: bottom center, top center;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
     @media #{$retina} {
-      background-image: url("../img/intro-triangle-tablet.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-size: auto;
-      background-position: bottom center, top center;
-      background-repeat: no-repeat, no-repeat;
+      background-image: url(../img/bg-back-desktop@2x.jpg);
     }
-  }
-  .main-header__main-logo--half-size {
-    height: 290px;
-    background-image: url("../img/intro-triangle-tablet.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-size: auto;
-    background-position: bottom center, bottom center;
-    background-repeat: no-repeat, no-repeat;
-    @media #{$retina} {
-      background-image: url("../img/intro-triangle-tablet.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-size: auto;
-      background-position: bottom center, bottom center;
-      background-repeat: no-repeat, no-repeat;
+    &--half-size {
+      height: 290px;
+      background-position: 32% 100%;
     }
-  }
+    &::after {
+      bottom: 0;
+      width: 768px;
+      height: 57px;
+      background-image: url("../img/intro-triangle-tablet.png");
+      background-size: 100% 57px;
+    }
+   }
+
   .sedona-logo-full {
     width: 460px;
     height: 350px;
@@ -135,31 +133,19 @@
 
 @media #{$desktop-widths} {
   .main-header__main-logo {
+    width: 1200px;
     height: 518px;
-    background-image: url("../img/intro-triangle-desktop.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-size: auto;
-    background-position: bottom center, top center;
-    background-repeat: no-repeat, no-repeat;
-    @media #{$retina} {
-      background-image: url("../img/intro-triangle-desktop.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-size: auto;
-      background-position: bottom center, top center;
-      background-repeat: no-repeat, no-repeat;
+    background-position: top;
+    &--half-size {
+      height: 301px;
+      background-position: 32% 100%;
+    }
+    &::after {
+      width: 1200px;
+      background-image: url(../img/intro-triangle-desktop.png);
     }
   }
-  .main-header__main-logo--half-size {
-    height: 301px;
-    background-image: url("../img/intro-triangle-desktop.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-size: auto;
-    background-position: bottom center, bottom center;
-    background-repeat: no-repeat, no-repeat;
-    @media #{$retina} {
-      background-image: url("../img/intro-triangle-desktop.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-size: auto;
-      background-position: bottom center, bottom center;
-      background-repeat: no-repeat, no-repeat;
-    }
-  }
+
   .sedona-logo-full {
     margin: 78px auto 0 auto;
   }
