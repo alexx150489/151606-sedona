@@ -463,7 +463,7 @@ textarea:-ms-input-placeholder  {
 //ОКНО ОШИБКИ
 .main-form__failure {
   position: fixed;
-  left: 25%px;
+  left: 25%;
   top: 300px;
   display: none;
   width: 320px;
@@ -530,7 +530,7 @@ textarea:-ms-input-placeholder  {
 //ОКНО УСПЕШНОЙ ОТПРАВКИ
 .main-form__success {
   position: fixed;
-  left: 25%px;
+  left: 25%;
   top: 300px;
   display: none;
   width: 320px;

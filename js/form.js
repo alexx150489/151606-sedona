@@ -1,6 +1,8 @@
 var form = document.querySelector("form");
-var tel = form.querySelector("[type=tel]");
-var email = form.querySelector("[type=email]");
+var tel = form.querySelector("[name=tel]");
+var telAlt = form.querySelector("[name=tel-alt]");
+
+var email = form.querySelector("[name=email]");
 var success = document.querySelector(".main-form__success");
 var closeSuccess = document.querySelector(".main-form__success-button");
 var failure = document.querySelector(".main-form__failure");
@@ -15,6 +17,7 @@ form.addEventListener("submit", function(event) {
     success.classList.add("main-form__success-show");
   }
 });
+
 
 closeFailure.addEventListener("click", function(event) {
 event.preventDefault();
