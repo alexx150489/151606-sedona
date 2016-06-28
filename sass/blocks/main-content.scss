@@ -23,7 +23,7 @@
   color: #333;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   margin-bottom: 23px;
 }
 .main-content__main-text--triangle::before {
@@ -46,6 +46,7 @@
 .main-content__main-text-photo {
   line-height: 24px;
   margin-bottom: 28px;
+  padding: 0px 23px;
 }
 
 //form

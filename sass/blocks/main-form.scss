@@ -29,7 +29,7 @@
   font-family: $font;
   font-size: 14px;
   line-height: 26px;
-  color: $secondary-text-color;
+  color: $base-text-color;
   text-transform: uppercase;
 }
 
@@ -167,8 +167,6 @@ input[type="tel"]::-webkit-input-placeholder {
   padding-left: 17px;
 }
 
-
-
 .main-form__label-tel {
   position: relative;
   margin-left: 22px;
@@ -269,7 +267,7 @@ input[type="email"]::-webkit-input-placeholder {
 }
 
 .main-form__impression-wrapper .main-form__title {
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .main-form__impression-wrapper input {
@@ -313,7 +311,6 @@ input[type="email"]::-webkit-input-placeholder {
   border: 16px solid  #d5d5d5;
   background-color: #a4a4a4;
 }
-
 
 //SIGHTS
 .main-form__sights-wrapper {
@@ -386,8 +383,6 @@ input[type="email"]::-webkit-input-placeholder {
   background: #d5d5d5 url("../img/icon-tick-active.svg") center no-repeat;
 }
 
-
-
 //EMOTION
 
 .main-form__emotion-wrapper {
@@ -431,7 +426,6 @@ textarea:-ms-input-placeholder  {
 }
 
 //SUBMIT-BUTTON
-
 .main-form__submit-btn {
   width: 280px;
   height: 58px;
@@ -458,7 +452,6 @@ textarea:-ms-input-placeholder  {
 .required-note {
   display: none;
 }
-
 
 //ОКНО ОШИБКИ
 .main-form__failure {
@@ -573,7 +566,7 @@ textarea:-ms-input-placeholder  {
 
 .main-form__success-button {
   display: block;
-  margin: 27px auto 0 auto;;
+  margin: 20px auto 0 auto;;
   padding: 0;
   border: none;
   width: 280px;
@@ -599,8 +592,6 @@ textarea:-ms-input-placeholder  {
 .main-form__success-show {
   display: block;
 }
-
-
 
 //TAB VERSION!!!
 @media #{$tablet-widths} {
@@ -657,7 +648,6 @@ textarea:-ms-input-placeholder  {
   .main-form__name-wrapper h2 {
     text-align: left;
   }
-
 
   .main-form__name-wrapper .main-form__title {
     display: none;
@@ -806,8 +796,6 @@ textarea:-ms-input-placeholder  {
     top: 3px;
     left: 28px;
   }
-
-
 
   .main-form__label-radio3 {
     order: 1;
@@ -991,8 +979,6 @@ textarea:-ms-input-placeholder  {
     color: $alternative-text-color;
     cursor: pointer;
   }
-
-
 }
 
 @media #{$desktop-widths} {
@@ -1109,8 +1095,6 @@ textarea:-ms-input-placeholder  {
     margin-right: 80px;
   }
 
-
-
   .main-form__label-email {
     margin-right: 21px;
     margin-left: 0;
@@ -1131,11 +1115,10 @@ textarea:-ms-input-placeholder  {
   }
 
   .main-form__sights-wrapper .main-form__title {
-
   }
 
   .main-form__sights-wrapper .main-form__checkbox-wrapper {
-    justify-content: left;
+    justify-content: flex-start;
     width: 960px;
   }
 
@@ -1147,6 +1130,7 @@ textarea:-ms-input-placeholder  {
 
   .main-form__checkbox-wrapper .main-form__label-radio1 {
     margin-left: 80px;
+    margin-right: 156px;
   }
 
   .main-form__sights-wrapper label:last-child {
@@ -1154,19 +1138,18 @@ textarea:-ms-input-placeholder  {
   }
 
   .main-form__sights-wrapper input + label::before {
-    left: -78px;
+    left: -81px;
   }
 
   .main-form__sights-wrapper input:checked + label::before {
-    left: -78px;
+    left: -81px;
   }
-
 
   //EMOTION DESK
 
   .main-form__emotion-wrapper {
     width: 960px;
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
   .main-form__emotion-wrapper .main-form__title {
     width: 960px;

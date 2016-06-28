@@ -1,5 +1,5 @@
 var form = document.querySelector("form");
-var tel = form.querySelector("[name=tel]");
+var tel = form.querySelector("[type=tel]");
 var telAlt = form.querySelector("[name=tel-alt]");
 
 var email = form.querySelector("[name=email]");

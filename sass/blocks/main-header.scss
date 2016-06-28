@@ -1,6 +1,5 @@
 .main-header {
   @include container;
-
 }
 
 .main-header__toggle-navigation {
@@ -102,7 +101,6 @@
   .main-header__toggle-navigation {
     display: none;
   }
-
   .main-header__main-logo {
     width: 768px;
     height: 518px;
@@ -112,7 +110,7 @@
     }
     &--half-size {
       height: 290px;
-      background-position: 32% 100%;
+      background-position: 50% 100%;
     }
     &::after {
       bottom: 0;

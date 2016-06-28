@@ -85,7 +85,6 @@
 
   .advantages__advantages-item:nth-child(3) {
     order:1;
-
   }
 
   .advantages__advantages-item {
@@ -105,7 +104,7 @@
   }
 
   .advantages__advantages-item:nth-child(3) .advantages__text {
-    padding: 0px 12px;
+    padding: 0px 14px;
   }
 
   .advantages__advantages-item:nth-child(1) {
@@ -117,7 +116,6 @@
   height: 72px;
   top: -100px;
   left: 55px;
-
 }
 
   .advantages__icon-gift {
@@ -125,7 +123,6 @@
   height: 75px;
   top: -103px;
   left: 60px;
-
   }
 
   .advantages__icon-burger {
@@ -133,7 +130,6 @@
   height: 68px;
   top: -97px;
   left: 55px;
-
   }
 }
 
@@ -146,7 +142,11 @@
     width: 400px;
   }
   .advantages__text {
-    padding: 0px 48px;
+    padding: 0px 64px;
+  }
+
+  .advantages__advantages-item:nth-child(3) .advantages__text {
+    padding: 0px 64px;
   }
 
   .advantages__icon-house {
@@ -155,11 +155,9 @@
 
   .advantages__icon-gift {
     left: 167px;
-
   }
 
   .advantages__icon-burger {
     left: 163px;
-
   }
 }
