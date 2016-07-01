@@ -748,6 +748,7 @@ textarea:-ms-input-placeholder  {
     background-color: white;
     text-align: center;
     display: inline-block;
+    vertical-align: top;
     padding: 0 63px;
     z-index: 2;
   }
@@ -809,6 +810,7 @@ textarea:-ms-input-placeholder  {
 
   .main-form__sights-wrapper h2 {
     display: inline-block;
+    vertical-align: top;
     z-index: 2;
     background-color: white;
     padding: 0px 61px;
@@ -899,6 +901,7 @@ textarea:-ms-input-placeholder  {
 
   .main-form__emotion-wrapper h2 {
     display: inline-block;
+    vertical-align: top;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
