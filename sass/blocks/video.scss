@@ -42,19 +42,18 @@
 }
 
 .video__control-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 280px;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.video__control-panel::after {
-  content: '';
-  position: absolute;
+.video__progress-line {
   width: 235px;
   height: 3px;
-  top: 22px;
-  left: 23px;
   background-color:rgba(255, 255, 255, 0.2);
 }
 
@@ -72,9 +71,11 @@
 
 .video__control-panel-second {
   position: absolute;
-  content: '';
   top: 202px;
   left: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 280px;
   height: 66px;
   background-color: #f2f2f2;
@@ -82,11 +83,10 @@
 }
 
 .video__control-panel-second .video__icon-replay {
-  position: absolute;
   width: 16px;
+  flex-grow: 1;
   height: 20px;
-  top: 21px;
-  left: 26px;
+  margin-left: 24px;
   cursor: pointer;
   background: url("../img/icon-replay-mob.svg") 0 0 no-repeat;
   &:hover {
@@ -98,11 +98,9 @@
 }
 
 .video__control-panel-second .video__icon-subtitles {
-  position: absolute;
   width: 32px;
+  margin-right: 31px;
   height: 20px;
-  top: 22px;
-  right: 73px;
   cursor: pointer;
   background: url("../img/icon-subtitles-mob.svg") 0 0 no-repeat;
   &:hover {
@@ -114,11 +112,9 @@
 }
 
 .video__control-panel-second .video__icon-fullscreen {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  width: 20px;
+    width: 20px;
   height: 20px;
+  margin-right: 24px;
   cursor: pointer;
   background: url("../img/icon-fullscreen-mob.svg") 0 0 no-repeat;
   &:hover {
@@ -171,18 +167,15 @@
   .video__control-panel {
     width: 648px;
     height: 93px;
-    content: "";
-    display: table;
-    clear: both;
+    justify-content: flex-start;
+
   }
 
   .video__control-panel .video__icon-replay {
   display: block;
-  float: left;
   width: 16px;
   height: 20px;
-  margin-top: 36px;
-  margin-right: 133px;
+  margin-right: 42px;
   margin-left: 35px;
   cursor: pointer;
   background: url("../img/icon-reply-alt.svg") 0 0 no-repeat;
@@ -195,14 +188,18 @@
     }
   }
 
+  .video__progress-line {
+    width: 388px;
+    margin-right: 42px;
+  }
+
   .video__control-panel .video__icon-subtitles {
     display: block;
-    float: right;
+    margin-right: 30px;
     width: 32px;
     height: 20px;
-    margin-right: 31px;
     cursor: pointer;
-    margin-top: 37px;
+
     background: url("../img/icon-subtitles-alt.svg") 0 0 no-repeat;
     &:hover {
       opacity: 0.3;
@@ -214,12 +211,11 @@
   }
   .video__control-panel .video__icon-fullscreen {
     display: block;
-    float: right;
+
     width: 20px;
     height: 20px;
     cursor: pointer;
-    margin-top: 37px;
-    margin-right: 41px;
+
     background: url("../img/icon-fullscreen-alt.svg") 0 0 no-repeat;
     &:hover {
       opacity: 0.3;
@@ -228,12 +224,6 @@
       opacity: 1;
       background: url("../img/icon-fullscreen-mob.svg") 0 0 no-repeat;
     }
-  }
-
-  .video__control-panel::after {
-    width: 388px;
-    top: 46px;
-    left: 93px;
   }
 
   .video__control-panel::before {
@@ -266,7 +256,7 @@
     width: 800px;
   }
 
-  .video__control-panel::after {
+  .video__progress-line {
     width: 540px;
   }
 }

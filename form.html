@@ -57,26 +57,36 @@
           <div class="main-form__title main-form__title--short">
             <h2>Представьтесь:</h2>
           </div>
-          <label for="name" class="main-form__label-name">Имя:</label>
-          <input id="name" class="main-form__input-name" type="text" placeholder="Петр">
-          <label for="surname" class="main-form__label-surname">Фамилия:</label>
-          <input id="surname" class="main-form__input-surname" type="text" placeholder="Иванов">
-          <label for="second-name" class="main-form__label-second-name">Отчество:</label>
-          <input id="second-name" class="main-form__input-second-name" type="text" placeholder="Александрович">
+          <div class="main-form__name-group">
+            <label for="name" class="main-form__label-name">Имя:</label>
+            <input id="name" class="main-form__input-name" type="text" placeholder="Петр">
+          </div>
+          <div class="main-form__surname-group">
+            <label for="surname" class="main-form__label-surname">Фамилия:</label>
+            <input id="surname" class="main-form__input-surname" type="text" placeholder="Иванов">
+          </div>
+          <div class="main-form__second-name-group">
+            <label for="second-name" class="main-form__label-second-name">Отчество:</label>
+            <input id="second-name" class="main-form__input-second-name" type="text" placeholder="Александрович">
+          </div>
         </div>
 
         <div class="main-form__contacts-wrapper">
           <div class="main-form__title">
             <h2>Контактная информация:</h2>
           </div>
-          <div class="main-form__wrapper">
-            <label for="tel" class="main-form__label-tel">Контактный телефон:</label>
-            <label for="tel-alt" class="main-form__label-tel--short">Телефон:</label>
-            <input id="tel" class="main-form__input-tel" type="tel" name="tel" placeholder="Введите телефон">
-            <input id="tel-alt" class="main-form__input-tel main-form__input-tel--alt" type="tel" name="tel-alt" placeholder="Введите номер">
-            <span class="main-form__warning">Ошибка, перепроверьте номер</span>
-            <label for="email" class="main-form__label-email">Электронная почта:</label>
-            <input id="email" class="main-form__input-email" type="email" name="email" placeholder="Введите e-mail">
+          <div class="main-form__contacts-group-wrapper">
+            <div class="main-form__tel-group">
+              <label for="tel" class="main-form__label-tel">Контактный телефон:</label>
+              <label for="tel-alt" class="main-form__label-tel main-form__label-tel--short">Телефон:</label>
+              <input id="tel" class="main-form__input-tel" type="tel" name="tel" placeholder="Введите телефон">
+              <input id="tel-alt" class="main-form__input-tel main-form__input-tel--alt" type="tel" name="tel-alt" placeholder="Введите номер">
+              <span class="main-form__warning">Ошибка, перепроверьте номер</span>
+            </div>
+            <div class="main-form__email-group">
+              <label for="email" class="main-form__label-email">Электронная почта:</label>
+              <input id="email" class="main-form__input-email" type="email" name="email" placeholder="Введите e-mail">
+            </div>
           </div>
         </div>
 
@@ -84,27 +94,41 @@
           <div class="main-form__title">
              <h2>Ваше общее впечатление:</h2>
           </div>
+          <div class="main-form__impression-group1">
             <input id="positive" type="radio" name="impression-radio" value="positive" checked>
             <label for="positive">Скорее положительное</label>
+          </div>
+          <div class="main-form__impression-group2">
             <input id="negative" type="radio" name="impression-radio" value="negative">
             <label for="negative">Скорее отрицательное</label>
+          </div>
+          <div class="main-form__impression-group3">
             <input id="neutral" type="radio" name="impression-radio" value="neutral">
             <label for="neutral">Затрудняюсь ответить</label>
+          </div>
         </div>
 
         <div class="main-form__sights-wrapper">
           <div class="main-form__title">
             <h2>Посещенные достопримечательности:</h2>
           </div>
-          <div class="main-form__checkbox-wrapper">
-            <input id="devil-bridge" type="checkbox" name="option1" value="#" checked>
-            <label for="devil-bridge" class="main-form__label-radio1">Мост Дьявола</label>
-            <input id="slide-park" type="checkbox" name="option2" value="#" checked>
-            <label for="slide-park" class="main-form__label-radio2">Слайд-парк</label>
-            <input id="bell-mountain" type="checkbox" name="option3" value="#">
-            <label for="bell-mountain" class="main-form__label-radio3">Гора-Колокол</label>
-            <input id="red-rocks" type="checkbox" name="option4" value="#" checked>
-            <label for="red-rocks" class="main-form__label-radio4">Красные скалы</label>
+          <div class="main-form__checkbox-group-wrapper">
+            <div class="main-form__checkbox-group1">
+              <input id="devil-bridge" type="checkbox" name="option1" value="#" checked>
+              <label for="devil-bridge" class="main-form__label-radio1">Мост Дьявола</label>
+            </div>
+            <div class="main-form__checkbox-group2">
+              <input id="slide-park" type="checkbox" name="option2" value="#" checked>
+              <label for="slide-park" class="main-form__label-radio2">Слайд-парк</label>
+            </div>
+            <div class="main-form__checkbox-group3">
+              <input id="bell-mountain" type="checkbox" name="option3" value="#">
+              <label for="bell-mountain" class="main-form__label-radio3">Гора-Колокол</label>
+            </div>
+            <div class="main-form__checkbox-group4">
+              <input id="red-rocks" type="checkbox" name="option4" value="#" checked>
+              <label for="red-rocks" class="main-form__label-radio4">Красные скалы</label>
+            </div>
           </div>
         </div>
         <div class="main-form__emotion-wrapper">
@@ -116,6 +140,19 @@
         <div class="main-form__submit-wrapper">
           <button class="main-form__submit-btn" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <div class="required-note">* — обязательные поля</div>
+        </div>
+        <div class="main-form__failure">
+          <div class="main-form__failure-title">Что-то пошло не так!</div>
+          <div class="main-form__failure-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+          <button class="main-form__failure-button">Ок</button>
+        </div>
+        <div class="main-form__success">
+          <div class="main-form__success-title">Ваш отзыв отправлен!</div>
+          <div class="main-form__success-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+    В ближайшее время мы опубликуем его на сайте.</div>
+          <div class="main-form__success-button-wrapper">
+            <button class="main-form__success-button">Закрыть окно</button>
+          </div>
         </div>
       </form>
     </section>
@@ -141,19 +178,8 @@
         </a>
       </div>
     </footer>
-    <div class="main-form__failure">
-      <div class="main-form__failure-title">Что-то пошло не так!</div>
-      <div class="main-form__failure-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
-      <button class="main-form__failure-button">Ок</button>
-    </div>
-    <div class="main-form__success">
-      <div class="main-form__success-title">Ваш отзыв отправлен!</div>
-      <div class="main-form__success-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-В ближайшее время мы опубликуем его на сайте.</div>
-      <div class="main-form__success-button-wrapper">
-        <button class="main-form__success-button">Закрыть окно</button>
-      </div>
-    </div>
+
+
 <script src="js/menu.js"></script>
 <script src="js/form.js"></script>
 </body>

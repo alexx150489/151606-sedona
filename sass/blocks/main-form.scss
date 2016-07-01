@@ -1,5 +1,5 @@
 .main-form {
-  @include clearfix;
+
 }
 
 .main-form__title {
@@ -41,10 +41,12 @@
 
 //NAME
 .main-form__name-wrapper {
-    border-top: 1px solid #e5e5e5;
-    width: 280px;
-    padding: 18px 20px 0 20px;
-    margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e5e5e5;
+  width: 280px;
+  padding: 18px 20px 0 20px;
+  margin-bottom: 3px;
 }
 
 .main-form__name-wrapper .main-form__title {
@@ -84,7 +86,8 @@ input[type="text"]:-ms-input-placeholder  {
 }
 
 .main-form input[type="text"]:focus {
-  border:4px solid #e5e5e5;
+   background-color: #ffffff;
+   border:4px solid #e5e5e5;
    padding-left: 19px;
 }
 
@@ -114,16 +117,18 @@ input[type="text"]:-ms-input-placeholder  {
 
 //CONTACTS
 .main-form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid #e5e5e5;
   padding: 18px 20px 0 20px;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .main-form__contacts-wrapper .main-form__title {
   margin-bottom: 18px;
 }
 
-.main-form__contacts-wrapper .main-form__wrapper {
+.main-form__tel-group {
   position: relative;
 }
 
@@ -134,6 +139,7 @@ input[type="text"]:-ms-input-placeholder  {
 .main-form__input-tel {
   padding: 0;
   padding-left: 21px;
+  padding-right: 42px;
   margin-top: 7px;
   margin-bottom: 42px;
   width: 259px;
@@ -162,9 +168,14 @@ input[type="tel"]::-webkit-input-placeholder {
   opacity: 1;
 }
 
+.main-form__input-tel:hover {
+  background-color: #e5e5e5;
+}
+
 .main-form__input-tel:focus {
   border:4px solid #e5e5e5;
   padding-left: 17px;
+  background-color: #ffffff;
 }
 
 .main-form__label-tel {
@@ -196,6 +207,7 @@ input[type="tel"]::-webkit-input-placeholder {
 .main-form__input-email {
   padding: 0;
   padding-left: 21px;
+  padding-right: 42px;
   margin-top: 7px;
   width: 259px;
   height: 58px;
@@ -223,7 +235,12 @@ input[type="email"]::-webkit-input-placeholder {
   opacity: 1;
 }
 
+.main-form__input-email:hover {
+  background-color: #e5e5e5;
+}
+
 .main-form__input-email:focus {
+  background-color: #ffffff;
   border:4px solid #e5e5e5;
   padding-left: 17px;
 }
@@ -245,10 +262,11 @@ input[type="email"]::-webkit-input-placeholder {
 
 //IMPRESSIONS
 .main-form__impression-wrapper {
-    width: 280px;
-    padding: 18px 20px 0 20px;
-
-    border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 18px 20px 0 20px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .main-form__impression-wrapper label {
@@ -267,7 +285,7 @@ input[type="email"]::-webkit-input-placeholder {
 }
 
 .main-form__impression-wrapper .main-form__title {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 }
 
 .main-form__impression-wrapper input {
@@ -314,22 +332,35 @@ input[type="email"]::-webkit-input-placeholder {
 
 //SIGHTS
 .main-form__sights-wrapper {
-    width: 280px;
-    padding: 18px 20px 0 20px;
-    margin-bottom: 11px;
-    border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 18px 20px 0 20px;
+  margin-bottom: 9px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .main-form__sights-wrapper .main-form__title {
   margin-bottom: 31px;
 }
 
-.main-form__checkbox-wrapper label {
+.main-form__checkbox-group1 {
+    margin-bottom: 25px;
+}
+
+.main-form__checkbox-group2 {
+    margin-bottom: 25px;
+}
+
+.main-form__checkbox-group3 {
+    margin-bottom: 25px;
+}
+
+.main-form__sights-wrapper label {
   position: relative;
   display: block;
   width: 201px;
   height: 56px;
-  margin-left: 0;
   padding-left: 78px;
   font-size: 18px;
   text-transform: none;
@@ -345,6 +376,7 @@ input[type="email"]::-webkit-input-placeholder {
 .main-form__sights-wrapper input {
   display:none;
 }
+
 //custom checkbox
 .main-form__sights-wrapper input + label::before {
   position: absolute;
@@ -386,10 +418,12 @@ input[type="email"]::-webkit-input-placeholder {
 //EMOTION
 
 .main-form__emotion-wrapper {
-    width: 280px;
-    padding: 18px 20px 0 20px;
-    border-top: 1px solid #e5e5e5;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 18px 20px 0 20px;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 50px;
 }
 
 .main-form__emotion-wrapper .main-form__title {
@@ -426,6 +460,10 @@ textarea:-ms-input-placeholder  {
 }
 
 //SUBMIT-BUTTON
+.main-form__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .main-form__submit-btn {
   width: 280px;
   height: 58px;
@@ -664,15 +702,27 @@ textarea:-ms-input-placeholder  {
   }
 
   .main-form__input-name {
-    width: 219px;
+    width: 216px;
+  }
+
+  .main-form__label-name {
+    margin-right: 14px;
+  }
+
+  .main-form__label-surname {
+    margin-right: 15px;
   }
 
   .main-form__input-surname {
-    width: 181px;
+    width: 178px;
+  }
+
+  .main-form__label-second-name {
+    margin-right: 14px;
   }
 
   .main-form__input-second-name {
-    width: 182px;
+    width: 179px;
   }
 
   //CONTACTS TAB
@@ -719,6 +769,7 @@ textarea:-ms-input-placeholder  {
   .main-form__input-tel {
     width: 648px;
     margin-bottom: 23px;
+    padding-right: 64px;
   }
 
   .main-form__label-tel::before {
@@ -727,6 +778,7 @@ textarea:-ms-input-placeholder  {
 
   .main-form__input-email {
     width: 648px;
+    padding-right: 64px;
   }
 
   .main-form__label-email::before {
@@ -743,10 +795,12 @@ textarea:-ms-input-placeholder  {
 
 //SIGHTS TAB
   .main-form__sights-wrapper {
+    flex-direction: column;
+    justify-content: center;
     width: 650px;
     border-top: none;
     padding: 0;
-    margin-bottom: 37px;
+    margin-bottom: 45px;
   }
 
   .main-form__sights-wrapper .main-form__title {
@@ -770,44 +824,56 @@ textarea:-ms-input-placeholder  {
     z-index: 1;
   }
 
-  .main-form__sights-wrapper .main-form__checkbox-wrapper {
+  .main-form__checkbox-group-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 656px;
+    justify-content: flex-start;
+    width: 650px;
   }
 
-  .main-form__checkbox-wrapper label {
-    display: inline-block;
+  .main-form__checkbox-group-wrapper  label {
     width: 154px;
     margin-bottom: 32px;
     line-height: 56px;
     text-align: left;
-    padding-left: 106px;
+    padding: 0;
+    margin-left: 174px;
+  }
+
+  .main-form__checkbox-group1 {
+    margin-bottom: 32px;
+  }
+
+  .main-form__checkbox-group-wrapper .main-form__label-radio3 {
+    margin-left: 105px;
+  }
+
+  .main-form__checkbox-group-wrapper .main-form__label-radio4 {
+    margin-left: 105px;
   }
 
   .main-form__sights-wrapper input + label::before {
-    top: 3px;
-    left: 28px;
+    top: 1px;
+    left: -77px;
   }
+
+
 
   .main-form__sights-wrapper input:checked + label::before {
-    top: 3px;
-    left: 28px;
+    top: 1px;
+    left: -77px;
   }
 
-  .main-form__label-radio3 {
+  .main-form__checkbox-group2 {
+    order: 2;
+  }
+
+  .main-form__checkbox-group3 {
     order: 1;
   }
 
-  .main-form__label-radio2 {
-    order: 2;
-    margin-left: 0;
-  }
-
-  .main-form__label-radio4 {
-    margin-left: 0;
+  .main-form__checkbox-group4 {
     order: 3;
   }
 
@@ -1015,24 +1081,53 @@ textarea:-ms-input-placeholder  {
     font-size: 21px;
     display: block;
     text-align: left;
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 
   .main-form input[type="text"] {
     margin-bottom: 19px;
   }
 
+  .main-form__surname-group {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .main-form__name-group {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .main-form__second-name-group {
+    display: flex;
+    align-items: baseline;
+  }
+
   .main-form__input-name {
-    width: 352px;
+    width: 354px;
+  }
+
+  .main-form__label-name {
+    margin-right: 17px;
   }
 
   .main-form__input-surname {
-    width: 314px;
+    width: 312px;
+  }
+
+  .main-form__label-surname {
+    margin-right: 19px;
   }
 
   .main-form__input-second-name {
-    width: 315px;
+    width: 312px;
   }
+
+  .main-form__label-second-name {
+    margin-right: 17px;
+  }
+
+
 
   .main-form__name-wrapper .main-form__title--short {
     display: none;
@@ -1049,17 +1144,20 @@ textarea:-ms-input-placeholder  {
     margin-bottom: 68px;
   }
 
-  .main-form__contacts-wrapper .main-form__wrapper {
+  .main-form__contacts-group-wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: baseline;
-  }
+}
 
   .main-form__warning {
     top: -27px;
     left: 106px;
+  }
+
+  .main-form__tel-group {
+    position: relative;
+    display: flex;
+    align-items: baseline;
   }
 
   .main-form__label-tel {
@@ -1070,6 +1168,7 @@ textarea:-ms-input-placeholder  {
     position: relative;
     display: inline;
     margin-right: 23px;
+    margin-left: 0;
   }
 
   .main-form__label-tel--short::before {
@@ -1095,6 +1194,11 @@ textarea:-ms-input-placeholder  {
     margin-right: 80px;
   }
 
+  .main-form__email-group {
+    display: flex;
+    align-items: baseline;
+  }
+
   .main-form__label-email {
     margin-right: 21px;
     margin-left: 0;
@@ -1114,12 +1218,9 @@ textarea:-ms-input-placeholder  {
   margin-bottom: 35px;
   }
 
-  .main-form__sights-wrapper .main-form__title {
-  }
 
-  .main-form__sights-wrapper .main-form__checkbox-wrapper {
-    justify-content: flex-start;
-    width: 960px;
+  .main-form__checkbox-group-wrapper {
+    width: 958px;
   }
 
   .main-form__checkbox-wrapper label {
@@ -1128,10 +1229,22 @@ textarea:-ms-input-placeholder  {
     padding: 0
   }
 
-  .main-form__checkbox-wrapper .main-form__label-radio1 {
-    margin-left: 80px;
-    margin-right: 156px;
+  .main-form__checkbox-group-wrapper .main-form__label-radio1 {
+    margin-left: 79px;
   }
+
+  .main-form__checkbox-group-wrapper .main-form__label-radio3 {
+    margin-left: 107px;
+  }
+
+  .main-form__checkbox-group-wrapper .main-form__label-radio2 {
+    margin-left: 103px;
+  }
+
+  .main-form__checkbox-group-wrapper .main-form__label-radio4 {
+    margin-left: 82px;
+    width: 125px;
+}
 
   .main-form__sights-wrapper label:last-child {
     margin-right: 0;
@@ -1149,7 +1262,7 @@ textarea:-ms-input-placeholder  {
 
   .main-form__emotion-wrapper {
     width: 960px;
-    margin-bottom: 54px;
+    margin-bottom: 58px;
   }
   .main-form__emotion-wrapper .main-form__title {
     width: 960px;
